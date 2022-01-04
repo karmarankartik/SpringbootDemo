@@ -12,7 +12,7 @@ import javax.persistence.TemporalType;
 
 
 @Entity
-@Table(name="STUDENT")
+@Table(name="student")
 public class Student {
 
     @Id
@@ -20,18 +20,18 @@ public class Student {
     private Long id;
 
 
-    @Column(name="STUDENT_NAME", length=50, nullable=false, unique=false)
+    @Column(name="student_name", length=50, nullable=false, unique=false)
     private String name;
 
     //temporal time and timestamp alos exist
 
     @Temporal(TemporalType.DATE)
-    @Column(name="DATE")
+    @Column(name="date")
     private Date birthDate;
 
   
 
-    @Column(name="GENDER")
+    @Column(name="gender")
     private String gender;
 
     public Long getId() {
