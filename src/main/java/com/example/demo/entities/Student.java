@@ -16,7 +16,7 @@ import javax.persistence.TemporalType;
 public class Student {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE)
+    @GeneratedValue
     private Long id;
 
 
